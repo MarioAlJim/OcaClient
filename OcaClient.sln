@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32825.248
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OcaClient", "OcaClient\OcaClient.csproj", "{C9408B73-B50E-48D9-8D45-147C41FAFD14}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OcaGameLogic", "OcaGameLogic\OcaGameLogic.csproj", "{6914921F-326D-4EA8-AC7E-E4869EAF0614}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C9408B73-B50E-48D9-8D45-147C41FAFD14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9408B73-B50E-48D9-8D45-147C41FAFD14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9408B73-B50E-48D9-8D45-147C41FAFD14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9408B73-B50E-48D9-8D45-147C41FAFD14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6914921F-326D-4EA8-AC7E-E4869EAF0614}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6914921F-326D-4EA8-AC7E-E4869EAF0614}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6914921F-326D-4EA8-AC7E-E4869EAF0614}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6914921F-326D-4EA8-AC7E-E4869EAF0614}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2EE98F0D-2529-4380-8CE8-D54A66752D12}
+	EndGlobalSection
+EndGlobal
