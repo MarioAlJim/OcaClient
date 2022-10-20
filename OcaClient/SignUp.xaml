@@ -1,0 +1,30 @@
+﻿<Window x:Class="OcaClient.SignUp"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OcaClient"
+        mc:Ignorable="d"
+        Title="SignUp" Height="450" Width="800">
+    <Grid Margin="0,0,-31,-84">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="43*"/>
+            <ColumnDefinition Width="788*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Registrarse" HorizontalAlignment="Left" Margin="297,34,0,0" VerticalAlignment="Top" Height="41" Width="150" FontWeight="Bold" FontSize="18" Grid.Column="1"/>
+        <Label Content="nombre" HorizontalAlignment="Left" Margin="185,112,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <Label Content="Apellidos&#xD;&#xA;" HorizontalAlignment="Left" Margin="185,164,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <Label Content="nombre de usuario&#xD;&#xA;" HorizontalAlignment="Left" Margin="185,265,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <Label Content="contraseña" HorizontalAlignment="Left" Margin="185,307,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <Label Content="confirmar contraseña" HorizontalAlignment="Left" Margin="185,356,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <TextBox x:Name="txt_Name" HorizontalAlignment="Left" Margin="377,116,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+        <TextBox x:Name="txt_LastName" HorizontalAlignment="Left" Margin="377,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+        <TextBox x:Name="txt_username" HorizontalAlignment="Left" Margin="377,268,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+        <Label Content="correo" HorizontalAlignment="Left" Margin="185,214,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <TextBox x:Name="txt_email" HorizontalAlignment="Left" Margin="377,218,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+        <Button Content="Registrar" HorizontalAlignment="Left" Margin="599,197,0,0" VerticalAlignment="Top" Click="Button_Click" Height="30" Width="74" RenderTransformOrigin="0.583,-1.789" Grid.Column="1"/>
+        <PasswordBox x:Name="txt_pwd" HorizontalAlignment="Left" Margin="377,320,0,0" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+        <PasswordBox x:Name="txt_confirmPwd" HorizontalAlignment="Left" Margin="377,360,0,0" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+
+    </Grid>
+</Window>
