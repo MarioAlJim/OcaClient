@@ -1,0 +1,18 @@
+﻿<Window x:Class="OcaClient.Settings"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OcaClient"
+        mc:Ignorable="d"
+        Title="Settings" Height="350" Width="550">
+    <Grid Background="#FFCA9703">
+        <ComboBox x:Name="cbb_Lenguaje" HorizontalAlignment="Left" Margin="324,65,0,0" VerticalAlignment="Top" Width="190" Text="Select lenguaje" Height="33"/>
+        <Button x:Name="btn_SignOut" Content="Sign Out" HorizontalAlignment="Left" Margin="410,265,0,0" VerticalAlignment="Top" Height="41" Width="104" FontSize="20" Background="#FF265999"/>
+        <Button x:Name="btn_SaveChanges" Content="Save changes" HorizontalAlignment="Left" Margin="33,265,0,0" VerticalAlignment="Top" Background="#FF4488BF" FontSize="20" Height="41" Width="147"/>
+        <Button x:Name="btn_Volume" Content="Volumen" HorizontalAlignment="Left" Margin="49,63,0,0" VerticalAlignment="Top" FontSize="20" Height="35" Width="115"/>
+        <Label x:Name="lbl_SelectLenguaje" Content="Select lenguaje" HorizontalAlignment="Left" Margin="324,34,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lbl_SelectLenguaje_Copy" Content="Change volumen" HorizontalAlignment="Left" Margin="49,32,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
