@@ -5,19 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:OcaClient"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="51*"/>
-            <ColumnDefinition Width="749*"/>
-        </Grid.ColumnDefinitions>
-        <Button x:Name="btn_inicioSesion" Content="Inicio de sesion" HorizontalAlignment="Left" Margin="523,256,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.236,1.627" Grid.Column="1" Height="21" Width="129" Click="btn_inicioSesion_Click"/>
-        <Label x:Name="lbl_InicioSesion" Content="Inicio de sesion" HorizontalAlignment="Left" Margin="516,71,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="20" Grid.Column="1"/>
-        <PasswordBox x:Name="txt_contrasenia" HorizontalAlignment="Left" Margin="492,199,0,0" VerticalAlignment="Top" Width="184" Height="28" Grid.Column="1" Tag=""/>
-
-        <Label x:Name="lbl_usuario" Grid.Column="1" Content="Usuario:" HorizontalAlignment="Left" Margin="416,144,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="lbl_contraseña" Grid.Column="1" Content="Contraseña:" HorizontalAlignment="Left" Margin="406,200,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="SignUp" Grid.Column="1" Content="SignUp" HorizontalAlignment="Left" Margin="584,335,0,0" VerticalAlignment="Top" Click="SignUp_Click"/>
-        <TextBox x:Name="txt_usuario" Grid.Column="1" HorizontalAlignment="Left" Margin="492,144,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="184" Height="26"/>
+        Title="MainWindow" Height="450" Width="789">
+    <Grid Background="#FFCA9703">
+        <Image x:Name="img_Logo" HorizontalAlignment="Left" Height="196" Margin="40,104,0,0" VerticalAlignment="Top" Width="236"/>
+        <Button x:Name="btn_Guess" Content="Login as guest" HorizontalAlignment="Left" Margin="479,258,0,0" VerticalAlignment="Top" Height="45" Width="162" FontSize="20" Background="#FF4488BF"/>
+        <Button x:Name="btn_UserGame" Content="I have an account" HorizontalAlignment="Left" Margin="479,179,0,0" VerticalAlignment="Top" Height="38" Width="162" FontSize="18" Background="#FF4488BF"/>
+        <Label x:Name="lbl_UserType" Content="Select your user type" HorizontalAlignment="Left" Margin="389,75,0,0" VerticalAlignment="Top" FontSize="36"/>
     </Grid>
 </Window>
