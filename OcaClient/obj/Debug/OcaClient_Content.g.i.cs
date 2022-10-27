@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("conceptos%20del%20negocio.bmp")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("oca-logo.png")]
 
 

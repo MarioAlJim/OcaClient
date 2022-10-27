@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Mario Jimenez\Desktop\Semestre 5\Tecnologias\Proyecto Final\OcaClient\OcaClient\obj\Debug\
+E:\Repositoros GIT\OcaClient\OcaClient\obj\Debug\
 OcaClient
 none
 false
 DEBUG;TRACE
-C:\Users\Mario Jimenez\Desktop\Semestre 5\Tecnologias\Proyecto Final\OcaClient\OcaClient\App.xaml
-6872821801
+E:\Repositoros GIT\OcaClient\OcaClient\App.xaml
+71356075516
 
-11-1842844566
-161834441597
-JoinGame.xaml;MainMenu.xaml;MainWindow.xaml;Settings.xaml;SignUp.xaml;UserType.xaml;
+121987684319
+161306527872
+JoinGame.xaml;Login.xaml;MainMenu.xaml;MainWindow.xaml;RestorePassword.xaml;Settings.xaml;SignUp.xaml;
 
 False
 

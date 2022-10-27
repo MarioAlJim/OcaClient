@@ -1,0 +1,25 @@
+﻿<Window x:Class="OcaClient.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OcaClient"
+        mc:Ignorable="d"
+        Title="Login" Height="478" Width="400">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="51*"/>
+            <ColumnDefinition Width="749*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="btn_inicioSesion" Content="Sig In" HorizontalAlignment="Left" Margin="132,330,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.236,1.627" Grid.Column="1" Height="22" Width="130" Click="btn_inicioSesion_Click"/>
+        <Label x:Name="lbl_InicioSesion" Content="Login" HorizontalAlignment="Left" Margin="150,166,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="36" Grid.Column="1"/>
+        <PasswordBox x:Name="txt_contrasenia" HorizontalAlignment="Left" Margin="122,282,0,0" VerticalAlignment="Top" Width="184" Height="28" Grid.Column="1" Tag=""/>
+
+        <Label x:Name="lbl_usuario" Grid.Column="1" Content="Nickname:" HorizontalAlignment="Left" Margin="46,226,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lbl_contraseña" Grid.Column="1" Content="Password:" HorizontalAlignment="Left" Margin="36,282,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="SignUp" Grid.Column="1" Content="SignUp" HorizontalAlignment="Left" Margin="176,424,0,0" VerticalAlignment="Top" Click="SignUp_Click"/>
+        <TextBox x:Name="txt_usuario" Grid.Column="1" HorizontalAlignment="Left" Margin="122,226,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="184" Height="26"/>
+        <Image HorizontalAlignment="Left" Height="150" Margin="124,12,0,0" VerticalAlignment="Top" Width="149" Source="/Oca-logo.png" Grid.Column="1"/>
+        <Button x:Name="btn_contrasenia" Grid.Column="1" Content="Forget your password?" HorizontalAlignment="Left" Margin="136,374,0,0" VerticalAlignment="Top" Click="btn_contrasenia_Click"/>
+    </Grid>
+</Window>

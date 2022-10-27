@@ -4,3 +4,9 @@ C:\Users\Mario Jimenez\Desktop\Semestre 5\Tecnologias\Proyecto Final\OcaClient\O
 C:\Users\Mario Jimenez\Desktop\Semestre 5\Tecnologias\Proyecto Final\OcaClient\OcaGameLogic\obj\Debug\OcaGameLogic.csproj.CoreCompileInputs.cache
 C:\Users\Mario Jimenez\Desktop\Semestre 5\Tecnologias\Proyecto Final\OcaClient\OcaGameLogic\obj\Debug\OcaGameLogic.dll
 C:\Users\Mario Jimenez\Desktop\Semestre 5\Tecnologias\Proyecto Final\OcaClient\OcaGameLogic\obj\Debug\OcaGameLogic.pdb
+E:\Repositoros GIT\OcaClient\OcaGameLogic\bin\Debug\OcaGameLogic.dll
+E:\Repositoros GIT\OcaClient\OcaGameLogic\bin\Debug\OcaGameLogic.pdb
+E:\Repositoros GIT\OcaClient\OcaGameLogic\obj\Debug\OcaGameLogic.csproj.AssemblyReference.cache
+E:\Repositoros GIT\OcaClient\OcaGameLogic\obj\Debug\OcaGameLogic.csproj.CoreCompileInputs.cache
+E:\Repositoros GIT\OcaClient\OcaGameLogic\obj\Debug\OcaGameLogic.dll
+E:\Repositoros GIT\OcaClient\OcaGameLogic\obj\Debug\OcaGameLogic.pdb

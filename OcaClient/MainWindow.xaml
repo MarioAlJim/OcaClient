@@ -9,7 +9,7 @@
     <Grid Background="#FFCA9703">
         <Image x:Name="img_Logo" HorizontalAlignment="Left" Height="196" Margin="40,104,0,0" VerticalAlignment="Top" Width="236"/>
         <Button x:Name="btn_Guess" Content="Login as guest" HorizontalAlignment="Left" Margin="479,258,0,0" VerticalAlignment="Top" Height="45" Width="162" FontSize="20" Background="#FF4488BF"/>
-        <Button x:Name="btn_UserGame" Content="I have an account" HorizontalAlignment="Left" Margin="479,179,0,0" VerticalAlignment="Top" Height="38" Width="162" FontSize="18" Background="#FF4488BF"/>
+        <Button x:Name="btn_UserGame" Content="I have an account" HorizontalAlignment="Left" Margin="479,179,0,0" VerticalAlignment="Top" Height="38" Width="162" FontSize="18" Background="#FF4488BF" Click="btn_UserGame_Click"/>
         <Label x:Name="lbl_UserType" Content="Select your user type" HorizontalAlignment="Left" Margin="389,75,0,0" VerticalAlignment="Top" FontSize="36"/>
     </Grid>
 </Window>
