@@ -30,7 +30,7 @@ namespace OcaClient
             int number = email.send(txt_email.Text);
             if (number != 0)
             {
-
+                Console.WriteLine("Correo enviado");
             }
             else
             {
