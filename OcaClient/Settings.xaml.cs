@@ -23,5 +23,29 @@ namespace OcaClient
         {
             InitializeComponent();
         }
+
+        private void cbb_Lenguaje_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (cbb_Lenguaje.SelectedIndex == 0)
+            {
+                Properties.Settings.Default.lenguajeCode = "en-US";
+            }
+            else
+            {
+                Properties.Settings.Default.lenguajeCode = "es-MX";
+            }
+        }
+
+        private void btn_SignOut_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
+            this.Close();
+        }
+
+        private void btn_SaveChanges_Click(object sender, RoutedEventArgs e)
+        { 
+            Properties.Settings.Default.Save();
+        }
     }
 }

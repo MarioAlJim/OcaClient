@@ -24,5 +24,19 @@ namespace OcaClient
         {
             InitializeComponent();
         }
+
+        private void btn_UserGame_Click(object sender, RoutedEventArgs e)
+        {
+            Login login = new Login();
+            login.Show();
+            this.Close();
+        }
+
+        private void btn_Guess_Click(object sender, RoutedEventArgs e)
+        {
+            MainMenu mainMenu = new MainMenu();
+            mainMenu.Show();
+            this.Close();
+        }
     }
 }
