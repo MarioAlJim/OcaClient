@@ -14,14 +14,29 @@ using System.Windows.Shapes;
 
 namespace OcaClient
 {
-    /// <summary>
-    /// Lógica de interacción para MainMenu.xaml
-    /// </summary>
     public partial class MainMenu : Window
     {
         public MainMenu()
         {
             InitializeComponent();
+        }
+
+        private void btn_JoinGame_Click(object sender, RoutedEventArgs e)
+        {
+            JoinGame join = new JoinGame();
+            join.Show();
+            this.Close();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btn_Settings_Click(object sender, RoutedEventArgs e)
+        {
+            Settings settings = new Settings();
+            settings.Show();
         }
     }
 }

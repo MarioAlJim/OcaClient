@@ -5,11 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:OcaClient"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="789">
-    <Grid Background="#FFCA9703">
+        xmlns:languages = "clr-namespace:OcaClient.Properties.Languages"
+        Title="Select user" Height="450" Width="789">
+    <Grid Background="#FF850CB5">
         <Image x:Name="img_Logo" HorizontalAlignment="Left" Height="196" Margin="40,104,0,0" VerticalAlignment="Top" Width="236"/>
-        <Button x:Name="btn_Guess" Content="Login as guest" HorizontalAlignment="Left" Margin="479,258,0,0" VerticalAlignment="Top" Height="45" Width="162" FontSize="20" Background="#FF4488BF"/>
-        <Button x:Name="btn_UserGame" Content="I have an account" HorizontalAlignment="Left" Margin="479,179,0,0" VerticalAlignment="Top" Height="38" Width="162" FontSize="18" Background="#FF4488BF"/>
-        <Label x:Name="lbl_UserType" Content="Select your user type" HorizontalAlignment="Left" Margin="389,75,0,0" VerticalAlignment="Top" FontSize="36"/>
+        <Button x:Name="btn_Guess" Content="{x:Static languages:Lang.Guest}" HorizontalAlignment="Left" Margin="479,258,0,0" VerticalAlignment="Top" Height="45" Width="162" FontSize="20" Background="#FFDE1616" Click="btn_Guess_Click"/>
+        <Button x:Name="btn_UserGame" Content="{x:Static languages:Lang.User}" HorizontalAlignment="Left" Margin="479,186,0,0" VerticalAlignment="Top" Height="46" Width="162" FontSize="18" Background="#FF36CE00" Click="btn_UserGame_Click"/>
+        <Label x:Name="lbl_UserType" Content="{x:Static languages:Lang.SelectUserType}" HorizontalAlignment="Left" Margin="389,75,0,0" VerticalAlignment="Top" FontSize="36"/>
     </Grid>
 </Window>

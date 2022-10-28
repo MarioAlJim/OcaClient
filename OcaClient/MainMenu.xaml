@@ -5,15 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:OcaClient"
         mc:Ignorable="d"
+        xmlns:languages = "clr-namespace:OcaClient.Properties.Languages"
         Title="MainMenu" Height="450" Width="800">
     <Grid Background="#FFCA9703">
-        <Button x:Name="btn_JoinGame" Content="Join Game" HorizontalAlignment="Center" Margin="0,251,0,0" VerticalAlignment="Top" Height="39" Width="196" FontSize="22" Background="#FF4488BF"/>
-        <Button Content="btn_CreateGame" HorizontalAlignment="Center" Margin="0,150,0,0" VerticalAlignment="Top" FontSize="22" Height="39" Width="197" Background="#FF4488BF"/>
-        <Button x:Name="btn_Friends" Content="Friends" HorizontalAlignment="Center" Margin="0,345,0,0" VerticalAlignment="Top" Height="39" Width="197" FontSize="22" Background="#FF4488BF"/>
+        <Button x:Name="btn_JoinGame" Content="{x:Static languages:Lang.JoinGame}" HorizontalAlignment="Center" Margin="0,251,0,0" VerticalAlignment="Top" Height="39" Width="196" FontSize="22" Background="#FF4488BF" Click="btn_JoinGame_Click"/>
+        <Button x:Name="btn_CreateGame" Content="{x:Static languages:Lang.CreateGame}" HorizontalAlignment="Center" Margin="0,150,0,0" VerticalAlignment="Top" FontSize="22" Height="39" Width="197" Background="#FF4488BF" Click="Button_Click"/>
+        <Button x:Name="btn_Friends" Content="{x:Static languages:Lang.Friends}" HorizontalAlignment="Center" Margin="0,345,0,0" VerticalAlignment="Top" Height="39" Width="197" FontSize="22" Background="#FF4488BF"/>
         <Image x:Name="img_Player" HorizontalAlignment="Left" Height="100" Margin="51,49,0,0" VerticalAlignment="Top" Width="100"/>
-        <Button x:Name="btn_Settings" Content="Settings" HorizontalAlignment="Left" Margin="696,362,0,0" VerticalAlignment="Top" Height="35" Width="56"/>
-        <Label x:Name="lbl_MainMenu" Content="Main Menu" HorizontalAlignment="Center" Margin="0,49,0,0" VerticalAlignment="Top" FontSize="36"/>
-        <Label x:Name="lbl_NickName" Content="SilverWolf" HorizontalAlignment="Left" Margin="75,191,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btn_Settings" Content="{x:Static languages:Lang.Settings}" HorizontalAlignment="Left" Margin="696,362,0,0" VerticalAlignment="Top" Height="35" Width="56" Click="btn_Settings_Click"/>
+        <Label x:Name="lbl_MainMenu" Content="{x:Static languages:Lang.TitleMenu}" HorizontalAlignment="Center" Margin="0,49,0,0" VerticalAlignment="Top" FontSize="36"/>
+        <Label x:Name="lbl_NickName" Content="" HorizontalAlignment="Left" Margin="75,191,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>
