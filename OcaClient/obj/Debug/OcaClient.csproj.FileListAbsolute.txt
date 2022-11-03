@@ -58,3 +58,7 @@ E:\Repositoros GIT\OcaClient\OcaClient\obj\Debug\OcaClient.exe
 E:\Repositoros GIT\OcaClient\OcaClient\obj\Debug\OcaClient.pdb
 E:\Repositoros GIT\OcaClient\OcaClient\obj\Debug\RestorePassword.g.cs
 E:\Repositoros GIT\OcaClient\OcaClient\obj\Debug\RestorePassword.baml
+E:\Repositoros GIT\OcaClient\OcaClient\obj\Debug\NewPassword.g.cs
+E:\Repositoros GIT\OcaClient\OcaClient\obj\Debug\ReportUser.g.cs
+E:\Repositoros GIT\OcaClient\OcaClient\obj\Debug\NewPassword.baml
+E:\Repositoros GIT\OcaClient\OcaClient\obj\Debug\ReportUser.baml

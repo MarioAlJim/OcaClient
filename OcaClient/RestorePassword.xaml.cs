@@ -7,6 +7,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
+using System.Windows.Forms;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
@@ -26,21 +27,29 @@ namespace OcaClient
 
         private void btn_send_Click(object sender, RoutedEventArgs e)
         {
-            OcaGameLogic.SendEmail email = new OcaGameLogic.SendEmail();
-            int number = email.send(txt_email.Text);
-            if (number != 0)
-            {
-                Console.WriteLine("Correo enviado");
-            }
-            else
-            {
-                MessageBox.Show("¿Desea reenviar el correo?", "Advertencia", MessageBoxButton.YesNo, MessageBoxImage.Information);
-            }
+            DialogResult result = System.Windows.Forms.DialogResult.OK;
+            do {
+                OcaGameLogic.SendEmail email = new OcaGameLogic.SendEmail();
+                int number = email.send(txt_email.Text);
+                if (number != 0)
+                {
+                    Console.WriteLine("Correo enviado");
+                }
+                else
+                {
+                    result = System.Windows.Forms.MessageBox.Show("¿Desea reenviar el correo?", "Advertencia", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+                }
+            } while (result == System.Windows.Forms.DialogResult.Yes);
         }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
 
+        }
+
+        private void btn_close_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }

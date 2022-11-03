@@ -51,8 +51,9 @@ namespace OcaClient
 
         private void btn_contrasenia_Click(object sender, RoutedEventArgs e)
         {
-            RestorePassword restore = new RestorePassword();
+            RestorePassword restore = new RestorePassword();            
             restore.Show();
+            this.Close();
         }
     }
 }

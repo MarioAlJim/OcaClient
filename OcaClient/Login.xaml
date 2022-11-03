@@ -8,15 +8,15 @@
         Title="Login" Height="478" Width="400">
     <Grid>
 
-        <Button x:Name="btn_inicioSesion" Content="Sig In" HorizontalAlignment="Left" Margin="132,330,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.236,1.627" Grid.Column="1" Height="22" Width="130" Click="btn_inicioSesion_Click"/>
+        <Button x:Name="btn_SignIn" Content="Sig In" HorizontalAlignment="Left" Margin="132,330,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.236,1.627" Grid.Column="1" Height="22" Width="130" Click="btn_inicioSesion_Click"/>
         <Label x:Name="lbl_InicioSesion" Content="Login" HorizontalAlignment="Left" Margin="150,166,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="36" Grid.Column="1"/>
         <PasswordBox x:Name="txt_contrasenia" HorizontalAlignment="Left" Margin="122,282,0,0" VerticalAlignment="Top" Width="184" Height="28" Grid.Column="1" Tag=""/>
 
         <Label x:Name="lbl_usuario" Grid.Column="1" Content="Nickname:" HorizontalAlignment="Left" Margin="46,226,0,0" VerticalAlignment="Top"/>
         <Label x:Name="lbl_contraseña" Grid.Column="1" Content="Password:" HorizontalAlignment="Left" Margin="36,282,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="SignUp" Grid.Column="1" Content="SignUp" HorizontalAlignment="Left" Margin="176,424,0,0" VerticalAlignment="Top" Click="SignUp_Click"/>
+        <Button x:Name="btn_SignIn1" Grid.Column="1" Content="SignUp" HorizontalAlignment="Left" Margin="176,424,0,0" VerticalAlignment="Top" Click="SignUp_Click"/>
         <TextBox x:Name="txt_usuario" Grid.Column="1" HorizontalAlignment="Left" Margin="122,226,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="184" Height="26"/>
         <Image HorizontalAlignment="Center" Height="150" Margin="0,13,0,0" VerticalAlignment="Top" Width="148" Source="/Oca-logo.png"/>
-        <Button x:Name="btn_contrasenia" Grid.Column="1" Content="Forget your password?" HorizontalAlignment="Left" Margin="136,374,0,0" VerticalAlignment="Top" Click="btn_contrasenia_Click"/>
+        <Button x:Name="btn_ForgetPassword" Grid.Column="1" Content="Forget your password?" HorizontalAlignment="Left" Margin="136,374,0,0" VerticalAlignment="Top" Click="btn_contrasenia_Click"/>
     </Grid>
 </Window>
