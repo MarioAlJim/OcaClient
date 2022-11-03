@@ -28,5 +28,10 @@ namespace OcaClient
         {
             this.Close();
         }
+
+        private void btn_Save_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

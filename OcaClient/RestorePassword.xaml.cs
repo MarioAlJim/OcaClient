@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.VisualBasic;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -31,9 +32,28 @@ namespace OcaClient
             do {
                 OcaGameLogic.SendEmail email = new OcaGameLogic.SendEmail();
                 int number = email.send(txt_email.Text);
+                int code = 0;
                 if (number != 0)
                 {
-                    Console.WriteLine("Correo enviado");
+                    try
+                    {
+                        code = Convert.ToInt32(Interaction.InputBox("Ingrese el codigo enviado a su correo", "Verificación"));
+                    }
+                    catch (Exception)
+                    {
+                        System.Windows.Forms.MessageBox.Show("Caracteres no validos");
+                    }
+
+                    if (number == code)
+                    {
+                        NewPassword newPassword = new NewPassword();
+                        newPassword.Show();
+                    }
+                    else
+                    {
+                        System.Windows.Forms.MessageBox.Show("Los códigos no coinciden"); 
+                    }
+
                 }
                 else
                 {
