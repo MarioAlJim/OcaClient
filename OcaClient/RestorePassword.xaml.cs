@@ -1,13 +1,12 @@
-﻿using System;
+﻿using Microsoft.VisualBasic;
+using System;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Forms;
 
 namespace OcaClient
 {
-    /// <summary>
-    /// Lógica de interacción para RestorePassword.xaml
-    /// </summary>
+
     public partial class RestorePassword : Window
     {
         public RestorePassword()
@@ -20,18 +19,37 @@ namespace OcaClient
             DialogResult result = System.Windows.Forms.DialogResult.OK;
             do
             {
-                OcaGameLogic.SendMail email = new OcaGameLogic.SendMail();
+                OcaGameLogic.SendEmail email = new OcaGameLogic.SendEmail();
                 int number = email.send(txt_email.Text);
+                int code = 0;
                 if (number != 0)
                 {
-                    Console.WriteLine("Correo enviado");
+                    try
+                    {
+                        code = Convert.ToInt32(Interaction.InputBox("Ingrese el codigo enviado a su correo", "Verificación"));
+                    }
+                    catch (Exception)
+                    {
+                        System.Windows.Forms.MessageBox.Show("Caracteres no validos");
+                    }
+
+                    if (number == code)
+                    {
+                        NewPassword newPassword = new NewPassword();
+                        newPassword.Show();
+                    }
+                    else
+                    {
+                        System.Windows.Forms.MessageBox.Show("Los códigos no coinciden");
+                    }
+
                 }
                 else
                 {
                     result = System.Windows.Forms.MessageBox.Show("¿Desea reenviar el correo?", "Advertencia", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
                 }
             } while (result == System.Windows.Forms.DialogResult.Yes);
-        }
+    }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {

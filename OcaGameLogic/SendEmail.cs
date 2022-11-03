@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace OcaGameLogic
 {
-    public class SendMail
+    public class SendEmail
     {
         public int send(string receiver)
         {
