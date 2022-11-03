@@ -1,16 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.ServiceModel;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
+
 
 namespace OcaClient
 {
@@ -22,25 +13,48 @@ namespace OcaClient
         public Login()
         {
             InitializeComponent();
+
         }
+        private OcaServices.User userAcount = new OcaServices.User();
 
         private void btn_inicioSesion_Click(object sender, RoutedEventArgs e)
         {
-            OcaGameServices.AuthenticationClient autentication = new OcaGameServices.AuthenticationClient();
-            String username = txt_usuario.Text;
-            String password = txt_contrasenia.Password;
-            bool exist;
-            exist = autentication.login(username, password);
-            if (exist == true)
+            OcaServices.AuthenticationClient autentication = new OcaServices.AuthenticationClient();
+            try
             {
-                MessageBox.Show("Bienvenido");
-                MainMenu mainMenu = new MainMenu();
-                mainMenu.Show();
-                this.Close();
+                String username = txt_usuario.Text;
+                String password = txt_contrasenia.Password;
+
+                userAcount = autentication.login(username, password);
+                if (userAcount.Nickname == username)
+                {
+                    MessageBox.Show("Bienvenido");
+                    MainMenu mainMenu = new MainMenu();
+                    mainMenu.Show();
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("No se encontro el usuario");
+                }
             }
-            else
+            catch (TimeoutException timeProblem)
             {
-                MessageBox.Show("No se encontro el usuario");
+                Console.WriteLine("The service operation timed out. " + timeProblem.Message);
+                autentication.Abort();
+                Console.ReadLine();
+            }
+            catch (FaultException faultEx)
+            {
+                Console.WriteLine("An unknown exception was received. " + faultEx.Message + faultEx.StackTrace);
+                Console.Read();
+                autentication.Abort();
+            }
+            catch (CommunicationException commProblem)
+            {
+                Console.WriteLine("There was a communication problem. " + commProblem.Message + commProblem.StackTrace);
+                Console.Read();
+                autentication.Abort();
             }
         }
 
