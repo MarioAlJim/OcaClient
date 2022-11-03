@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="fbe7eb17-b383-4222-85ac-8a4b7407480a" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="7f941f8e-5b5a-4ab7-b1c5-8358a40bfd65" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -19,12 +19,13 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://192.168.1.112:8082/?wsdl" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://localhost:8080/?wsdl" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="Authentication.wsdl" MetadataType="Wsdl" ID="19e2bdfb-bb54-458a-acaf-08a2d1ece9d8" SourceId="1" SourceUrl="http://192.168.1.112:8082/?wsdl" />
-    <MetadataFile FileName="item.xsd" MetadataType="Schema" ID="2fec7d3e-6975-4804-9164-3012bec7238a" SourceId="1" SourceUrl="http://192.168.1.112:8082/?xsd=xsd1" />
-    <MetadataFile FileName="item1.xsd" MetadataType="Schema" ID="36230dd0-1eb8-4856-896e-6e448838ff36" SourceId="1" SourceUrl="http://192.168.1.112:8082/?xsd=xsd0" />
+    <MetadataFile FileName="item.xsd" MetadataType="Schema" ID="5949a8a7-e884-4005-9c4b-8d0aa0943582" SourceId="1" SourceUrl="http://localhost:8080/?xsd=xsd2" />
+    <MetadataFile FileName="item1.xsd" MetadataType="Schema" ID="5a4404bd-4c28-462e-9a7a-3b6693fb80c5" SourceId="1" SourceUrl="http://localhost:8080/?xsd=xsd1" />
+    <MetadataFile FileName="item2.xsd" MetadataType="Schema" ID="c12d065e-4f36-45e3-bcfd-af4ff9cf5887" SourceId="1" SourceUrl="http://localhost:8080/?xsd=xsd0" />
+    <MetadataFile FileName="OcaGameServices.wsdl" MetadataType="Wsdl" ID="5e59c72c-0651-4e8d-9e8d-3cd5f0b9852c" SourceId="1" SourceUrl="http://localhost:8080/?wsdl" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
