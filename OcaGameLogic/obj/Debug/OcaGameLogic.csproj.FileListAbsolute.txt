@@ -1,6 +1,0 @@
-C:\Users\Mario Jimenez\Desktop\Semestre 5\Tecnologias\Proyecto Final\OcaClient\OcaGameLogic\obj\Debug\OcaGameLogic.csproj.AssemblyReference.cache
-C:\Users\Mario Jimenez\Desktop\Semestre 5\Tecnologias\Proyecto Final\OcaClient\OcaGameLogic\obj\Debug\OcaGameLogic.csproj.CoreCompileInputs.cache
-C:\Users\Mario Jimenez\Desktop\Semestre 5\Tecnologias\Proyecto Final\OcaClient\OcaGameLogic\bin\Debug\OcaGameLogic.dll
-C:\Users\Mario Jimenez\Desktop\Semestre 5\Tecnologias\Proyecto Final\OcaClient\OcaGameLogic\bin\Debug\OcaGameLogic.pdb
-C:\Users\Mario Jimenez\Desktop\Semestre 5\Tecnologias\Proyecto Final\OcaClient\OcaGameLogic\obj\Debug\OcaGameLogic.dll
-C:\Users\Mario Jimenez\Desktop\Semestre 5\Tecnologias\Proyecto Final\OcaClient\OcaGameLogic\obj\Debug\OcaGameLogic.pdb
