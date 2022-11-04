@@ -28,15 +28,16 @@ namespace OcaClient
             this.Close();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
         private void btn_Settings_Click(object sender, RoutedEventArgs e)
         {
             Settings settings = new Settings();
             settings.Show();
+        }
+
+        private void btn_CreateGame_Click(object sender, RoutedEventArgs e)
+        {
+            Lobby lobby = new Lobby();
+            lobby.Show();
         }
     }
 }
