@@ -120,6 +120,9 @@
   <data name="Afk" xml:space="preserve">
     <value>Player afk</value>
   </data>
+  <data name="Background" xml:space="preserve">
+    <value>Select background</value>
+  </data>
   <data name="Cancel" xml:space="preserve">
     <value>Cancel</value>
   </data>
@@ -168,6 +171,9 @@
   <data name="Nickname" xml:space="preserve">
     <value>Nickname</value>
   </data>
+  <data name="NumberofPlayers" xml:space="preserve">
+    <value>Number of players</value>
+  </data>
   <data name="Password" xml:space="preserve">
     <value>Password</value>
   </data>
@@ -213,6 +219,9 @@
   <data name="Spanish" xml:space="preserve">
     <value>Spanish</value>
   </data>
+  <data name="StartGame" xml:space="preserve">
+    <value>Start game</value>
+  </data>
   <data name="TempBan" xml:space="preserve">
     <value>Temporal ban</value>
   </data>
@@ -222,11 +231,17 @@
   <data name="Time" xml:space="preserve">
     <value>Time</value>
   </data>
+  <data name="TitleLobby" xml:space="preserve">
+    <value>Lobby</value>
+  </data>
   <data name="TitleMenu" xml:space="preserve">
     <value>Oca game</value>
   </data>
   <data name="Turn" xml:space="preserve">
     <value>Turn</value>
+  </data>
+  <data name="TurnTime" xml:space="preserve">
+    <value>Turn time</value>
   </data>
   <data name="User" xml:space="preserve">
     <value>User</value>

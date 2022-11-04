@@ -70,6 +70,15 @@ namespace OcaClient.Properties.Languages {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Select background.
+        /// </summary>
+        public static string Background {
+            get {
+                return ResourceManager.GetString("Background", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Cancel.
         /// </summary>
         public static string Cancel {
@@ -214,6 +223,15 @@ namespace OcaClient.Properties.Languages {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Number of players.
+        /// </summary>
+        public static string NumberofPlayers {
+            get {
+                return ResourceManager.GetString("NumberofPlayers", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Password.
         /// </summary>
         public static string Password {
@@ -349,6 +367,15 @@ namespace OcaClient.Properties.Languages {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Start game.
+        /// </summary>
+        public static string StartGame {
+            get {
+                return ResourceManager.GetString("StartGame", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Temporal ban.
         /// </summary>
         public static string TempBan {
@@ -376,6 +403,15 @@ namespace OcaClient.Properties.Languages {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Lobby.
+        /// </summary>
+        public static string TitleLobby {
+            get {
+                return ResourceManager.GetString("TitleLobby", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Oca game.
         /// </summary>
         public static string TitleMenu {
@@ -390,6 +426,15 @@ namespace OcaClient.Properties.Languages {
         public static string Turn {
             get {
                 return ResourceManager.GetString("Turn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Turn time.
+        /// </summary>
+        public static string TurnTime {
+            get {
+                return ResourceManager.GetString("TurnTime", resourceCulture);
             }
         }
         

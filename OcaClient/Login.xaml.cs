@@ -15,11 +15,11 @@ namespace OcaClient
             InitializeComponent();
 
         }
-        private OcaServices.User userAcount = new OcaServices.User();
+        private OcaGameServices.User userAcount = new OcaGameServices.User();
 
         private void btn_inicioSesion_Click(object sender, RoutedEventArgs e)
         {
-            OcaServices.AuthenticationClient autentication = new OcaServices.AuthenticationClient();
+            OcaGameServices.AuthenticationClient autentication = new OcaGameServices.AuthenticationClient();
             try
             {
                 String username = txt_usuario.Text;

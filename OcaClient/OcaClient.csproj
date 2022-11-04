@@ -74,13 +74,16 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Connected Services\OcaServices\Reference.cs">
+    <Compile Include="Connected Services\OcaGameServices\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
     <Compile Include="JoinGame.xaml.cs">
       <DependentUpon>JoinGame.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Lobby.xaml.cs">
+      <DependentUpon>Lobby.xaml</DependentUpon>
     </Compile>
     <Compile Include="Login.xaml.cs">
       <DependentUpon>Login.xaml</DependentUpon>
@@ -113,6 +116,10 @@
       <DependentUpon>SignUp.xaml</DependentUpon>
     </Compile>
     <Page Include="JoinGame.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Lobby.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -186,19 +193,19 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="Connected Services\OcaServices\item.xsd">
+    <None Include="Connected Services\OcaGameServices\item.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\OcaServices\item1.xsd">
+    <None Include="Connected Services\OcaGameServices\item1.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\OcaServices\item2.xsd">
+    <None Include="Connected Services\OcaGameServices\item2.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\OcaServices\OcaClient.OcaServices.User.datasource">
+    <None Include="Connected Services\OcaGameServices\OcaClient.OcaGameServices.User.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\OcaServices\OcaGameServices.wsdl" />
+    <None Include="Connected Services\OcaGameServices\OcaGameServices.wsdl" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -235,23 +242,23 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadataStorage Include="Connected Services\OcaServices\" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Connected Services\OcaServices\configuration91.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Connected Services\OcaServices\configuration.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Connected Services\OcaServices\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
+    <WCFMetadataStorage Include="Connected Services\OcaGameServices\" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Properties\Resources\Conceptos del negocio.bmp" />
     <Resource Include="Properties\Resources\FondoOca.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\OcaGameServices\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\OcaGameServices\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\OcaGameServices\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

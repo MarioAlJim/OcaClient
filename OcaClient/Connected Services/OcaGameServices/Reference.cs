@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace OcaClient.OcaServices {
+namespace OcaClient.OcaGameServices {
     using System.Runtime.Serialization;
     using System;
     
@@ -187,23 +187,23 @@ namespace OcaClient.OcaServices {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="OcaServices.IAuthentication")]
+    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="OcaGameServices.IAuthentication")]
     public interface IAuthentication {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IAuthentication/login", ReplyAction="http://tempuri.org/IAuthentication/loginResponse")]
-        OcaClient.OcaServices.User login(string userName, string password);
+        OcaClient.OcaGameServices.User login(string userName, string password);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IAuthentication/login", ReplyAction="http://tempuri.org/IAuthentication/loginResponse")]
-        System.Threading.Tasks.Task<OcaClient.OcaServices.User> loginAsync(string userName, string password);
+        System.Threading.Tasks.Task<OcaClient.OcaGameServices.User> loginAsync(string userName, string password);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface IAuthenticationChannel : OcaClient.OcaServices.IAuthentication, System.ServiceModel.IClientChannel {
+    public interface IAuthenticationChannel : OcaClient.OcaGameServices.IAuthentication, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class AuthenticationClient : System.ServiceModel.ClientBase<OcaClient.OcaServices.IAuthentication>, OcaClient.OcaServices.IAuthentication {
+    public partial class AuthenticationClient : System.ServiceModel.ClientBase<OcaClient.OcaGameServices.IAuthentication>, OcaClient.OcaGameServices.IAuthentication {
         
         public AuthenticationClient() {
         }
@@ -224,17 +224,17 @@ namespace OcaClient.OcaServices {
                 base(binding, remoteAddress) {
         }
         
-        public OcaClient.OcaServices.User login(string userName, string password) {
+        public OcaClient.OcaGameServices.User login(string userName, string password) {
             return base.Channel.login(userName, password);
         }
         
-        public System.Threading.Tasks.Task<OcaClient.OcaServices.User> loginAsync(string userName, string password) {
+        public System.Threading.Tasks.Task<OcaClient.OcaGameServices.User> loginAsync(string userName, string password) {
             return base.Channel.loginAsync(userName, password);
         }
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="OcaServices.IChatService", CallbackContract=typeof(OcaClient.OcaServices.IChatServiceCallback))]
+    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="OcaGameServices.IChatService", CallbackContract=typeof(OcaClient.OcaGameServices.IChatServiceCallback))]
     public interface IChatService {
         
         [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://tempuri.org/IChatService/Join")]
@@ -258,12 +258,12 @@ namespace OcaClient.OcaServices {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface IChatServiceChannel : OcaClient.OcaServices.IChatService, System.ServiceModel.IClientChannel {
+    public interface IChatServiceChannel : OcaClient.OcaGameServices.IChatService, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class ChatServiceClient : System.ServiceModel.DuplexClientBase<OcaClient.OcaServices.IChatService>, OcaClient.OcaServices.IChatService {
+    public partial class ChatServiceClient : System.ServiceModel.DuplexClientBase<OcaClient.OcaGameServices.IChatService>, OcaClient.OcaGameServices.IChatService {
         
         public ChatServiceClient(System.ServiceModel.InstanceContext callbackInstance) : 
                 base(callbackInstance) {

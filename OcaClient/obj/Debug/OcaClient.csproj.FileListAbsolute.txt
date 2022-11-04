@@ -38,3 +38,5 @@ C:\Users\Mario Jimenez\Desktop\Semestre 5\Tecnologias\Proyecto Final\OcaClient\O
 C:\Users\Mario Jimenez\Desktop\Semestre 5\Tecnologias\Proyecto Final\OcaClient\OcaClient\obj\Debug\OcaClient.csproj.CopyComplete
 C:\Users\Mario Jimenez\Desktop\Semestre 5\Tecnologias\Proyecto Final\OcaClient\OcaClient\obj\Debug\OcaClient.exe
 C:\Users\Mario Jimenez\Desktop\Semestre 5\Tecnologias\Proyecto Final\OcaClient\OcaClient\obj\Debug\OcaClient.pdb
+C:\Users\Mario Jimenez\Desktop\Semestre 5\Tecnologias\Proyecto Final\OcaClient\OcaClient\obj\Debug\Lobby.g.cs
+C:\Users\Mario Jimenez\Desktop\Semestre 5\Tecnologias\Proyecto Final\OcaClient\OcaClient\obj\Debug\Lobby.baml

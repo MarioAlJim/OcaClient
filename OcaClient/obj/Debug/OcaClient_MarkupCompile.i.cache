@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\Mario Jimenez\Desktop\Semestre 5\Tecnologias\Proyecto Final\OcaClient\OcaClient\App.xaml
-8839905829
+9354205123
 
-17-2099621362
+181527787278
 18-1896377246
-JoinGame.xaml;Login.xaml;MainMenu.xaml;MainWindow.xaml;NewPassword.xaml;RestorePassword.xaml;Settings.xaml;SignUp.xaml;
+JoinGame.xaml;Lobby.xaml;Login.xaml;MainMenu.xaml;MainWindow.xaml;NewPassword.xaml;RestorePassword.xaml;Settings.xaml;SignUp.xaml;
 
-False
+True
 
