@@ -79,6 +79,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="GameBoard.xaml.cs">
+      <DependentUpon>GameBoard.xaml</DependentUpon>
+    </Compile>
     <Compile Include="JoinGame.xaml.cs">
       <DependentUpon>JoinGame.xaml</DependentUpon>
     </Compile>
@@ -112,6 +115,10 @@
     <Compile Include="SignUp.xaml.cs">
       <DependentUpon>SignUp.xaml</DependentUpon>
     </Compile>
+    <Page Include="GameBoard.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="JoinGame.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -252,6 +259,15 @@
   <ItemGroup>
     <Resource Include="Properties\Resources\Conceptos del negocio.bmp" />
     <Resource Include="Properties\Resources\FondoOca.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="TableroOca.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="BackgroundOca.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="BackGroundLake.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

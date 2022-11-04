@@ -8,7 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("properties/resources/conceptos%20del%20negocio.bmp")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("properties/resources/fondooca.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("backgroundlake.png")]
 
 
