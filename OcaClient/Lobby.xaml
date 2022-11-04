@@ -32,9 +32,10 @@
             <ComboBoxItem Content="3"/>
             <ComboBoxItem Content="4"/>
         </ComboBox>
-        <Button x:Name="btn_CreateGame" Content="{x:Static languages:Lang.CreateGame}" HorizontalAlignment="Center" Margin="0,280,0,0" VerticalAlignment="Top" Height="28" Width="150"/>
-        <Button x:Name="btn_StartGame" Content="{x:Static languages:Lang.StartGame}" HorizontalAlignment="Left" Margin="482,328,0,0" VerticalAlignment="Top" Height="28" Width="94"/>
-        <Button x:Name="btn_Cancel" Content="{x:Static languages:Lang.Cancel}" HorizontalAlignment="Left" Margin="30,323,0,0" VerticalAlignment="Top" Height="28" Width="94"/>
-
+        <Button x:Name="btn_CreateGame" Content="{x:Static languages:Lang.CreateGame}" HorizontalAlignment="Center" Margin="0,280,0,0" VerticalAlignment="Top" Height="28" Width="150" Click="btn_CreateGame_Click"/>
+        <Button x:Name="btn_StartGame" Content="{x:Static languages:Lang.StartGame}" HorizontalAlignment="Left" Margin="482,328,0,0" VerticalAlignment="Top" Height="28" Width="94" IsEnabled="False"/>
+        <Button x:Name="btn_Cancel" Content="{x:Static languages:Lang.Cancel}" HorizontalAlignment="Left" Margin="30,323,0,0" VerticalAlignment="Top" Height="28" Width="94" Click="btn_Cancel_Click"/>
+        <TextBox x:Name="txt_Code" HorizontalAlignment="Left" Margin="442,107,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="134" FontSize="20" IsEnabled="False" FontWeight="Bold"/>
+        <Label x:Name="lbl_Code" Content="{x:Static languages:Lang.Code}" HorizontalAlignment="Left" Margin="472,70,0,0" VerticalAlignment="Top" FontSize="20"/>
     </Grid>
 </Window>

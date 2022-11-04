@@ -106,6 +106,15 @@ namespace OcaClient.Properties.Languages {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Code.
+        /// </summary>
+        public static string Code {
+            get {
+                return ResourceManager.GetString("Code", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Create new game.
         /// </summary>
         public static string CreateGame {

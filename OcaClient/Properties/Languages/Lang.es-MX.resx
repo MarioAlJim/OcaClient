@@ -132,6 +132,9 @@
   <data name="Chat" xml:space="preserve">
     <value>Chat</value>
   </data>
+  <data name="Code" xml:space="preserve">
+    <value>Codigo</value>
+  </data>
   <data name="CreateGame" xml:space="preserve">
     <value>Crear nuevo juego</value>
   </data>
