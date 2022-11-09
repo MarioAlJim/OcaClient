@@ -269,5 +269,16 @@
   <ItemGroup>
     <Resource Include="BackGroundLake.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Oca-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="dice_five.png" />
+    <Resource Include="dice_four.png" />
+    <Resource Include="dice_one.png" />
+    <Resource Include="dice_six.png" />
+    <Resource Include="dice_three.png" />
+    <Resource Include="dice_two.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

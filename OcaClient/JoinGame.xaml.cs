@@ -23,5 +23,10 @@ namespace OcaClient
         {
             InitializeComponent();
         }
+
+        private void btn_JoinGame_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
