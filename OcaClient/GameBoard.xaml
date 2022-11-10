@@ -1,0 +1,42 @@
+﻿<Window x:Class="OcaClient.GameBoard"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OcaClient"
+        mc:Ignorable="d"
+        Title="GameBoard" Height="641" Width="1058">
+    <Grid Margin="0,0,-24,-119">
+        <Grid.Background>
+            <ImageBrush ImageSource="/BackgroundOca.jpg" Stretch="Fill" TileMode="None"/>
+        </Grid.Background>
+
+        <Image HorizontalAlignment="Left" Height="509" Margin="157,37,0,0" VerticalAlignment="Top" Width="746" Source="/BackGroundLake.png"/>
+        <Rectangle HorizontalAlignment="Left" Height="118" Margin="43,76,0,0" Stroke="Black" VerticalAlignment="Top" Width="147"/>
+        <Image HorizontalAlignment="Left" Height="64" Margin="52,84,0,0" VerticalAlignment="Top" Width="64"/>
+        <Label Content="Username" HorizontalAlignment="Left" Margin="116,94,0,0" VerticalAlignment="Top"/>
+        <Button Content="Report" HorizontalAlignment="Left" Margin="97,162,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.025,0.854"/>
+        <Rectangle HorizontalAlignment="Left" Height="120" Margin="43,448,0,0" Stroke="Black" VerticalAlignment="Top" Width="147"/>
+        <Image HorizontalAlignment="Left" Height="53" Margin="52,465,0,0" VerticalAlignment="Top" Width="52"/>
+        <Label Content="Username" HorizontalAlignment="Left" Margin="122,477,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.411,0.579"/>
+        <Button Content="Report" HorizontalAlignment="Left" Margin="97,536,0,0" VerticalAlignment="Top"/>
+        <Rectangle HorizontalAlignment="Left" Height="118" Margin="43,268,0,0" Stroke="Black" VerticalAlignment="Top" Width="147"/>
+        <Image HorizontalAlignment="Left" Height="64" Margin="52,296,0,0" VerticalAlignment="Top" Width="64"/>
+        <Label Content="Username" HorizontalAlignment="Left" Margin="122,301,0,0" VerticalAlignment="Top"/>
+        <Button Content="Report" HorizontalAlignment="Left" Margin="97,359,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btn_rollDice" Content="Tirar dado" HorizontalAlignment="Left" Margin="510,541,0,0" VerticalAlignment="Top" FontSize="20" Click="roll_Dice"/>
+        <Rectangle HorizontalAlignment="Left" Height="118" Margin="896,84,0,0" Stroke="Black" VerticalAlignment="Top" Width="147"/>
+        <Image HorizontalAlignment="Left" Height="64" Margin="901,84,0,0" VerticalAlignment="Top" Width="64"/>
+        <Label Content="Username" HorizontalAlignment="Left" Margin="970,107,0,0" VerticalAlignment="Top"/>
+        <Button Content="Report" HorizontalAlignment="Left" Margin="950,172,0,0" VerticalAlignment="Top"/>
+        <Rectangle HorizontalAlignment="Left" Height="118" Margin="900,268,0,0" Stroke="Black" VerticalAlignment="Top" Width="147"/>
+        <Image HorizontalAlignment="Left" Height="64" Margin="901,268,0,0" VerticalAlignment="Top" Width="64"/>
+        <Label Content="Username" HorizontalAlignment="Left" Margin="970,301,0,0" VerticalAlignment="Top"/>
+        <Button Content="Report" HorizontalAlignment="Left" Margin="954,354,0,0" VerticalAlignment="Top"/>
+        <Rectangle HorizontalAlignment="Left" Height="118" Margin="900,448,0,0" Stroke="Black" VerticalAlignment="Top" Width="147"/>
+        <Image HorizontalAlignment="Left" Height="64" Margin="901,448,0,0" VerticalAlignment="Top" Width="64"/>
+        <Label Content="Username" HorizontalAlignment="Left" Margin="970,482,0,0" VerticalAlignment="Top"/>
+        <Button Content="Report" HorizontalAlignment="Left" Margin="954,531,0,0" VerticalAlignment="Top"/>
+        <Image x:Name="img_dice" HorizontalAlignment="Left" Height="135" Margin="481,600,0,0" VerticalAlignment="Top" Width="148"/>
+    </Grid>
+</Window>

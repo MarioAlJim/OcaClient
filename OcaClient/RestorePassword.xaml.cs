@@ -2,7 +2,8 @@
 using System;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Forms;
+
+
 
 namespace OcaClient
 {
@@ -16,7 +17,7 @@ namespace OcaClient
 
         private void btn_send_Click(object sender, RoutedEventArgs e)
         {
-            DialogResult result = System.Windows.Forms.DialogResult.OK;
+            MessageBoxResult result = MessageBoxResult.No;
             do
             {
                 OcaGameLogic.SendEmail email = new OcaGameLogic.SendEmail();
@@ -28,27 +29,26 @@ namespace OcaClient
                     {
                         code = Convert.ToInt32(Interaction.InputBox("Ingrese el codigo enviado a su correo", "Verificación"));
                     }
-                    catch (Exception)
+                    catch (FormatException)
                     {
-                        System.Windows.Forms.MessageBox.Show("Caracteres no validos");
+                        MessageBox.Show("Caracteres no validos");
+                        result = MessageBox.Show("¿Desea reenviar el correo?", "Advertencia", MessageBoxButton.YesNo, MessageBoxImage.Information);
                     }
 
                     if (number == code)
                     {
                         NewPassword newPassword = new NewPassword();
                         newPassword.Show();
-                    }
-                    else
-                    {
-                        System.Windows.Forms.MessageBox.Show("Los códigos no coinciden");
-                    }
+                        result = MessageBoxResult.No;
+                    }                    
 
                 }
                 else
                 {
-                    result = System.Windows.Forms.MessageBox.Show("¿Desea reenviar el correo?", "Advertencia", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+                   result = MessageBox.Show("¿Desea reenviar el correo?", "Advertencia", MessageBoxButton.YesNo, MessageBoxImage.Information);
+                  
                 }
-            } while (result == System.Windows.Forms.DialogResult.Yes);
+            } while (result == MessageBoxResult.Yes);
     }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)

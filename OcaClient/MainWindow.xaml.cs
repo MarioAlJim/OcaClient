@@ -34,9 +34,13 @@ namespace OcaClient
 
         private void btn_Guess_Click(object sender, RoutedEventArgs e)
         {
+            /*
             MainMenu mainMenu = new MainMenu();
             mainMenu.Show();
             this.Close();
+            */
+            GameBoard gameBoard = new GameBoard();
+            gameBoard.Show();
         }
     }
 }
