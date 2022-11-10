@@ -23,10 +23,15 @@ namespace OcaClient
         {
             InitializeComponent();
         }
-
+        
         private void btn_JoinGame_Click(object sender, RoutedEventArgs e)
         {
 
+        private void btn_CancelJoin_Click(object sender, RoutedEventArgs e)
+        {
+            MainMenu main = new MainMenu();
+            main.Show();
+            this.Close();
         }
     }
 }
