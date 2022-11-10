@@ -15,20 +15,13 @@ using System.Windows.Shapes;
 namespace OcaClient
 {
     /// <summary>
-    /// Lógica de interacción para JoinGame.xaml
+    /// Lógica de interacción para GameBoard.xaml
     /// </summary>
-    public partial class JoinGame : Window
+    public partial class GameBoard : Window
     {
-        public JoinGame()
+        public GameBoard()
         {
             InitializeComponent();
-        }
-
-        private void btn_CancelJoin_Click(object sender, RoutedEventArgs e)
-        {
-            MainMenu main = new MainMenu();
-            main.Show();
-            this.Close();
         }
     }
 }

@@ -9,7 +9,7 @@
         Title="MainMenu" Height="450" Width="800">
     <Grid Background="#FFCA9703">
         <Button x:Name="btn_JoinGame" Content="{x:Static languages:Lang.JoinGame}" HorizontalAlignment="Center" Margin="0,251,0,0" VerticalAlignment="Top" Height="39" Width="196" FontSize="22" Background="#FF4488BF" Click="btn_JoinGame_Click"/>
-        <Button x:Name="btn_CreateGame" Content="{x:Static languages:Lang.CreateGame}" HorizontalAlignment="Center" Margin="0,150,0,0" VerticalAlignment="Top" FontSize="22" Height="39" Width="197" Background="#FF4488BF" Click="Button_Click"/>
+        <Button x:Name="btn_CreateGame" Content="{x:Static languages:Lang.CreateGame}" HorizontalAlignment="Center" Margin="0,150,0,0" VerticalAlignment="Top" FontSize="22" Height="39" Width="197" Background="#FF4488BF" Click="btn_CreateGame_Click"/>
         <Button x:Name="btn_Friends" Content="{x:Static languages:Lang.Friends}" HorizontalAlignment="Center" Margin="0,345,0,0" VerticalAlignment="Top" Height="39" Width="197" FontSize="22" Background="#FF4488BF"/>
         <Image x:Name="img_Player" HorizontalAlignment="Left" Height="100" Margin="51,49,0,0" VerticalAlignment="Top" Width="100"/>
         <Button x:Name="btn_Settings" Content="{x:Static languages:Lang.Settings}" HorizontalAlignment="Left" Margin="696,362,0,0" VerticalAlignment="Top" Height="35" Width="56" Click="btn_Settings_Click"/>
