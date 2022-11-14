@@ -24,7 +24,7 @@
                 </TransformGroup>
             </TextBox.RenderTransform>
         </TextBox>
-        <Button x:Name="btn_CancelJoin" Content="Cancel" HorizontalAlignment="Left" Margin="431,38,0,0" VerticalAlignment="Top" Height="30" Width="51" Click="btn_CancelJoin_Click"/>
+        <Button x:Name="btn_CancelJoin" Content="Cancel" HorizontalAlignment="Left" Margin="431,38,0,0" VerticalAlignment="Top" Height="30" Width="51"/>
 
     </Grid>
 </Window>

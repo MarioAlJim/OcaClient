@@ -14,42 +14,55 @@ namespace OcaClient
         {
             InitializeComponent();
         }
+        
 
         private void btn_send_Click(object sender, RoutedEventArgs e)
         {
+            OcaServices.EmailClient email = new OcaServices.EmailClient();
+            OcaServices.User userAcount = new OcaServices.User();
             MessageBoxResult result = MessageBoxResult.No;
-            do
-            {
-                OcaGameLogic.SendEmail email = new OcaGameLogic.SendEmail();
-                int number = email.send(txt_email.Text);
-                int code = 0;
-                if (number != 0)
+            userAcount = email.GetUserFromEmail(txt_email.Text);           
+            if (userAcount.Email == txt_email.Text) 
+            { 
+                do
                 {
-                    try
+
+                    int number = email.sendEmail(txt_email.Text);
+                    int code = 0;
+                    if (number != 0)
                     {
-                        code = Convert.ToInt32(Interaction.InputBox("Ingrese el codigo enviado a su correo", "Verificación"));
+                        try
+                        {
+                            code = Convert.ToInt32(Interaction.InputBox("Ingrese el codigo enviado a su correo", "Verificación"));
+                        }
+                        catch (FormatException)
+                        {
+                            MessageBox.Show("Caracteres no validos");
+                            result = MessageBox.Show("¿Desea reenviar el correo?", "Advertencia", MessageBoxButton.YesNo, MessageBoxImage.Information);
+                        }
+
+                        if (number == code)
+                        {
+                            NewPassword newPassword = new NewPassword();
+                            newPassword.reciveUser(userAcount);
+                            newPassword.Show();
+                            result = MessageBoxResult.No;
+                            
+                        }
+
                     }
-                    catch (FormatException)
+                    else
                     {
-                        MessageBox.Show("Caracteres no validos");
                         result = MessageBox.Show("¿Desea reenviar el correo?", "Advertencia", MessageBoxButton.YesNo, MessageBoxImage.Information);
+
                     }
-
-                    if (number == code)
-                    {
-                        NewPassword newPassword = new NewPassword();
-                        newPassword.Show();
-                        result = MessageBoxResult.No;
-                    }                    
-
-                }
-                else
-                {
-                   result = MessageBox.Show("¿Desea reenviar el correo?", "Advertencia", MessageBoxButton.YesNo, MessageBoxImage.Information);
-                  
-                }
-            } while (result == MessageBoxResult.Yes);
-    }
+                } while (result == MessageBoxResult.Yes);
+            }
+            else
+            {
+                MessageBox.Show("El correo no pertence a un usuario");
+            }
+        }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
