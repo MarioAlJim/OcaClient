@@ -46,11 +46,11 @@ namespace OcaClient
                 result = email.UpdatePassword(activeUser);
                 if (result == true)
                 {
-                    Console.WriteLine("SI SE LOGRO");
+                    MessageBox.Show("Contraseña registrada");
                 }
                 else
                 {
-                    Console.WriteLine("NO SE LOGRO");
+                    MessageBox.Show("La operación falló, intentelo de nuevo");
                 }
             }
             else

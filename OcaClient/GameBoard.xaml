@@ -5,8 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:OcaClient"
         mc:Ignorable="d"
-        Title="GameBoard" Height="641" Width="1058">
-    <Grid Margin="0,0,-24,-119">
+        Title="GameBoard" Height="702" Width="1069">
+
+    <Grid Margin="0,0,0,-6">
         <Grid.Background>
             <ImageBrush ImageSource="/BackgroundOca.jpg" Stretch="Fill" TileMode="None"/>
         </Grid.Background>
@@ -21,10 +22,10 @@
         <Label Content="Username" HorizontalAlignment="Left" Margin="122,477,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.411,0.579"/>
         <Button Content="Report" HorizontalAlignment="Left" Margin="97,536,0,0" VerticalAlignment="Top"/>
         <Rectangle HorizontalAlignment="Left" Height="118" Margin="43,268,0,0" Stroke="Black" VerticalAlignment="Top" Width="147"/>
-        <Image HorizontalAlignment="Left" Height="64" Margin="52,296,0,0" VerticalAlignment="Top" Width="64"/>
+        <Image HorizontalAlignment="Left" Height="64" Margin="52,268,0,0" VerticalAlignment="Top" Width="64"/>
         <Label Content="Username" HorizontalAlignment="Left" Margin="122,301,0,0" VerticalAlignment="Top"/>
         <Button Content="Report" HorizontalAlignment="Left" Margin="97,359,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="btn_rollDice" Content="Tirar dado" HorizontalAlignment="Left" Margin="510,541,0,0" VerticalAlignment="Top" FontSize="20" Click="roll_Dice"/>
+        <Button x:Name="btn_rollDice" Content="Tirar dado" HorizontalAlignment="Left" Margin="366,594,0,0" VerticalAlignment="Top" FontSize="20" Click="roll_Dice"/>
         <Rectangle HorizontalAlignment="Left" Height="118" Margin="896,84,0,0" Stroke="Black" VerticalAlignment="Top" Width="147"/>
         <Image HorizontalAlignment="Left" Height="64" Margin="901,84,0,0" VerticalAlignment="Top" Width="64"/>
         <Label Content="Username" HorizontalAlignment="Left" Margin="970,107,0,0" VerticalAlignment="Top"/>
@@ -37,6 +38,38 @@
         <Image HorizontalAlignment="Left" Height="64" Margin="901,448,0,0" VerticalAlignment="Top" Width="64"/>
         <Label Content="Username" HorizontalAlignment="Left" Margin="970,482,0,0" VerticalAlignment="Top"/>
         <Button Content="Report" HorizontalAlignment="Left" Margin="954,531,0,0" VerticalAlignment="Top"/>
-        <Image x:Name="img_dice" HorizontalAlignment="Left" Height="135" Margin="481,600,0,0" VerticalAlignment="Top" Width="148"/>
+        <Image x:Name="img_dice" HorizontalAlignment="Left" Height="110" Margin="534,546,0,0" VerticalAlignment="Top" Width="126"/>
+
+        <Button x:Name="btn_Exit" Content="Exit" HorizontalAlignment="Left" Margin="915,609,0,0" VerticalAlignment="Top" Background="#FFE82D2D" Height="50" Width="118" FontSize="16"/>
+
+        <Grid Margin="250,52,217,165">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="7*"></ColumnDefinition>
+                <ColumnDefinition Width="60*"></ColumnDefinition>
+                <ColumnDefinition Width="69*"></ColumnDefinition>
+                <ColumnDefinition Width="67*"></ColumnDefinition>
+                <ColumnDefinition Width="66*"></ColumnDefinition>
+                <ColumnDefinition Width="69*"></ColumnDefinition>
+                <ColumnDefinition Width="68*"></ColumnDefinition>
+                <ColumnDefinition Width="67*"></ColumnDefinition>
+                <ColumnDefinition Width="68*"></ColumnDefinition>
+                <ColumnDefinition Width="61*"></ColumnDefinition>
+                <ColumnDefinition Width="0*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="7*"></RowDefinition>
+                <RowDefinition Height="71*"></RowDefinition>
+                <RowDefinition Height="64*"></RowDefinition>
+                <RowDefinition Height="66*"></RowDefinition>
+                <RowDefinition Height="66*"></RowDefinition>
+                <RowDefinition Height="68*"></RowDefinition>
+                <RowDefinition Height="69*"></RowDefinition>
+                <RowDefinition Height="64.004"></RowDefinition>
+                <RowDefinition Height="0*"></RowDefinition>
+            </Grid.RowDefinitions>
+        </Grid>
+
+
+
     </Grid>
 </Window>
