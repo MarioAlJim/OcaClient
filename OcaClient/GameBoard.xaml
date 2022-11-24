@@ -12,7 +12,7 @@
             <ImageBrush ImageSource="/BackgroundOca.jpg" Stretch="Fill" TileMode="None"/>
         </Grid.Background>
 
-        <Image HorizontalAlignment="Left" Height="509" Margin="157,37,0,0" VerticalAlignment="Top" Width="746" Source="/BackGroundLake.png"/>
+        <Image HorizontalAlignment="Left" Height="509" Margin="157,37,0,0" VerticalAlignment="Top" Width="746" Source="/GameBoardOca.png"/>
         <Rectangle HorizontalAlignment="Left" Height="118" Margin="43,76,0,0" Stroke="Black" VerticalAlignment="Top" Width="147"/>
         <Image HorizontalAlignment="Left" Height="64" Margin="52,84,0,0" VerticalAlignment="Top" Width="64"/>
         <Label Content="Username" HorizontalAlignment="Left" Margin="116,94,0,0" VerticalAlignment="Top"/>
@@ -42,34 +42,11 @@
 
         <Button x:Name="btn_Exit" Content="Exit" HorizontalAlignment="Left" Margin="915,609,0,0" VerticalAlignment="Top" Background="#FFE82D2D" Height="50" Width="118" FontSize="16"/>
 
-        <Grid Margin="250,52,217,165">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="7*"></ColumnDefinition>
-                <ColumnDefinition Width="60*"></ColumnDefinition>
-                <ColumnDefinition Width="69*"></ColumnDefinition>
-                <ColumnDefinition Width="67*"></ColumnDefinition>
-                <ColumnDefinition Width="66*"></ColumnDefinition>
-                <ColumnDefinition Width="69*"></ColumnDefinition>
-                <ColumnDefinition Width="68*"></ColumnDefinition>
-                <ColumnDefinition Width="67*"></ColumnDefinition>
-                <ColumnDefinition Width="68*"></ColumnDefinition>
-                <ColumnDefinition Width="61*"></ColumnDefinition>
-                <ColumnDefinition Width="0*"></ColumnDefinition>
-            </Grid.ColumnDefinitions>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="7*"></RowDefinition>
-                <RowDefinition Height="71*"></RowDefinition>
-                <RowDefinition Height="64*"></RowDefinition>
-                <RowDefinition Height="66*"></RowDefinition>
-                <RowDefinition Height="66*"></RowDefinition>
-                <RowDefinition Height="68*"></RowDefinition>
-                <RowDefinition Height="69*"></RowDefinition>
-                <RowDefinition Height="64.004"></RowDefinition>
-                <RowDefinition Height="0*"></RowDefinition>
-            </Grid.RowDefinitions>
+
+        <TextBlock x:Name="lbl_Timer" HorizontalAlignment="Left" Margin="157,625,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+
+        <Grid Height="473" Width="647" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,56,0,0">
+            <Image x:Name="img_RedChip" Height="48" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="587,415,0,0" Source="/FichaRoja.png" Width="64"/>
         </Grid>
-
-
-
     </Grid>
 </Window>
